@@ -18,13 +18,16 @@ begin
         read(codigo);
         write('Ingrese el precio actual: ');
         read(precio_Actual);
+        write('Ingrese el precio nuevo: ');
+        read(precio_Nuevo);
         
-        if precio_Nuevo < precio_Actual then
+        if precio_Nuevo > precio_Actual then
         begin
-            write('Ingrese el precio nuevo: ');
-            read(precio_Nuevo);
-            writeln('El nuevo precio del producto supera en un 10% al precio anterior');
-        
+            writeln('El aumento de precio del producto: ', codigo ,' es superior al 10%');
+        end
+        else 
+        begin
+            writeln('El aumento de precio del producto: ', codigo ,' no supera al 10%');
         end;
     end;    
 end.
