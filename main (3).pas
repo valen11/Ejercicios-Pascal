@@ -1,0 +1,28 @@
+{
+1. Realizar un programa que lea 2 números enteros desde teclado e informe en pantalla cuál de los dos
+números es el mayor. Si son iguales debe informar en pantalla lo siguiente:
+Los números leídos son iguales
+}
+
+program numeros;
+var
+numero1,numero2:integer;
+begin
+    write('Ingrese numero 1: ');
+    read(numero1);
+    write('Ingrese numero 2: ');
+    read(numero2);
+    if (numero1 > numero2) then
+    begin 
+        write('Numero 1 es mayor');
+       
+    end;
+    if (numero2 > numero1) then 
+    begin
+    write('Numero 2 es mayor');
+    end
+    else if (numero1 = numero2) then
+    begin
+        write('Los numeros son iguales');
+    end;
+end.
