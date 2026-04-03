@@ -1,0 +1,32 @@
+{
+6. Realizar un programa que lea el código, el precio actual y el nuevo precio de los productos de un almacén.
+La lectura finaliza al ingresar el producto con el código 32767, el cual debe procesarse. Para cada producto
+leído, el programa deberá indicar si el nuevo precio del producto supera en un 10% al precio anterior.
+}
+program super;
+var
+    codigo,precio_Actual,precio_Nuevo:integer;
+   
+begin
+    codigo:=0;
+    precio_Actual:=0;
+    precio_Nuevo:=0;
+  
+    while codigo <> 32767 do
+    begin
+        write('Ingrese el codigo: ');
+        read(codigo);
+        write('Ingrese el precio actual: ');
+        read(precio_Actual);
+        
+        if precio_Nuevo < precio_Actual then
+        begin
+            write('Ingrese el precio nuevo: ');
+            read(precio_Nuevo);
+            writeln('El nuevo precio del producto supera en un 10% al precio anterior');
+        
+        end;
+    end;    
+end.
+
+
