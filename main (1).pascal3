@@ -1,0 +1,37 @@
+{
+7. Realizar un programa que lea tres caracteres, e informe si los tres eran letras vocales o si al menos uno de
+ellos no lo era.
+Por ejemplo:
+○ Si se leen los caracteres “a e o”, deberá informar: Los tres son vocales
+○ Si se leen los caracteres “z a g”, deberá informar: Al menos un carácter no era vocal
+}
+
+program caracteres;
+var
+caracter1,caracter2,caracter3:Char;
+begin
+    caracter1:=' ';
+    caracter2:=' ';
+    caracter3:=' '; 
+    writeln('Ingrese caracter 1: ');
+    readln(caracter1);
+    
+    writeln('Ingrese caracter 2: ');
+    readln(caracter2);
+    
+    writeln('Ingrese caracter 3: ');
+    readln(caracter3);
+    if ((caracter1 = 'a')or(caracter1 = 'e')or(caracter1 = 'i')or(caracter1 = 'o')) and
+       ((caracter2 = 'a')or(caracter2 = 'e')or(caracter2 = 'i')or(caracter2 = 'o')) and
+       ((caracter3 = 'a')or(caracter3 = 'e')or(caracter3 = 'i')or(caracter3 = 'o')) then
+    begin
+        write('Los tres son vocales');
+    end
+    else 
+    begin
+        write('Al menos un carácter no era vocal');
+    end;    
+    
+end.
+
+
